@@ -1,0 +1,1620 @@
+/* English Practice Styles */
+.english-practice {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.english-practice .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.english-practice .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.english-practice .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.english-practice .logo i {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.english-practice .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.english-practice .nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.english-practice .nav-links a:hover {
+  color: #667eea;
+}
+
+.english-practice .nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.english-practice .nav-links a:hover::after {
+  width: 100%;
+}
+
+.english-practice .nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.english-practice .btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-practice .btn-outline {
+  background: transparent;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.english-practice .btn-outline:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.english-practice .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.english-practice .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+/* Hero Section */
+.english-practice .hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.english-practice .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.english-practice .hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.english-practice .hero-content {
+  color: white;
+}
+
+.english-practice .hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.english-practice .hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.english-practice .hero-title span {
+  display: block;
+  background: linear-gradient(to right, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.english-practice .hero-description {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.english-practice .hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.english-practice .btn-hero {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-practice .btn-hero-primary {
+  background: white;
+  color: #667eea;
+}
+
+.english-practice .btn-hero-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.english-practice .btn-hero-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.english-practice .btn-hero-secondary:hover {
+  background: white;
+  color: #667eea;
+}
+
+.english-practice .hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.english-practice .stat-item {
+  text-align: center;
+}
+
+.english-practice .stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.english-practice .stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.english-practice .hero-image {
+  position: relative;
+}
+
+.english-practice .hero-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: rotate(-5deg);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(-5deg) translateY(-20px); }
+}
+
+.english-practice .card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.english-practice .card-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.english-practice .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.english-practice .quiz-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.english-practice .quiz-item:hover {
+  background: #e8ecf1;
+  transform: translateX(5px);
+}
+
+.english-practice .quiz-number {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.english-practice .quiz-text {
+  flex: 1;
+  color: #555;
+}
+
+.english-practice .quiz-arrow {
+  color: #667eea;
+}
+
+.english-practice .floating-card {
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: floatBounce 4s ease-in-out infinite;
+}
+
+.english-practice .floating-card-1 {
+  top: -20px;
+  right: -30px;
+  animation-delay: 0.5s;
+}
+
+.english-practice .floating-card-2 {
+  bottom: -20px;
+  left: -30px;
+  animation-delay: 1s;
+}
+
+@keyframes floatBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.english-practice .mini-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.english-practice .mini-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.english-practice .mini-icon.green {
+  background: #d4edda;
+  color: #28a745;
+}
+
+.english-practice .mini-icon.orange {
+  background: #fff3cd;
+  color: #ffc107;
+}
+
+.english-practice .mini-text {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.english-practice .mini-number {
+  font-weight: 700;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* Container */
+.english-practice .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Section Header */
+.english-practice .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.english-practice .section-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  color: #667eea;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.english-practice .section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.english-practice .section-title span {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.english-practice .section-description {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.english-practice .features {
+  padding: 100px 0;
+  background: white;
+}
+
+.english-practice .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.english-practice .feature-card {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.english-practice .feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.english-practice .feature-card:hover {
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+.english-practice .feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+.english-practice .feature-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.english-practice .feature-card:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.english-practice .feature-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.english-practice .feature-description {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.english-practice .feature-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.3s ease;
+}
+
+.english-practice .feature-link:hover {
+  gap: 15px;
+}
+
+/* Practice Section */
+.english-practice .practice {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
+}
+
+.english-practice .practice-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.english-practice .tab-btn {
+  padding: 15px 35px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.english-practice .tab-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.english-practice .tab-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.english-practice .practice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.english-practice .practice-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.english-practice .practice-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.english-practice .practice-image {
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.english-practice .practice-image i {
+  font-size: 4rem;
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.english-practice .practice-image-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.english-practice .practice-image-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.english-practice .practice-image-content p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.english-practice .practice-body {
+  padding: 25px;
+}
+
+.english-practice .practice-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.english-practice .practice-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.english-practice .practice-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.english-practice .practice-info {
+  display: flex;
+  gap: 20px;
+}
+
+.english-practice .practice-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.english-practice .practice-info-item i {
+  color: #667eea;
+}
+
+.english-practice .btn-practice {
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-practice .btn-practice:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Quiz Section */
+.english-practice .quiz-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.english-practice .quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.english-practice .quiz-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.english-practice .quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.english-practice .quiz-progress {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.english-practice .progress-bar {
+  width: 200px;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.english-practice .progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.english-practice .progress-text {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.english-practice .quiz-timer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff3cd;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #856404;
+  font-weight: 600;
+}
+
+.english-practice .quiz-question {
+  margin-bottom: 30px;
+}
+
+.english-practice .question-number {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.english-practice .question-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+}
+
+.english-practice .quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.english-practice .option-btn {
+  width: 100%;
+  padding: 20px 25px;
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.english-practice .option-btn:hover {
+  border-color: #667eea;
+  background: rgba(102, 126, 234, 0.05);
+}
+
+.english-practice .option-btn.selected {
+  border-color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.english-practice .option-letter {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #667eea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.english-practice .quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.english-practice .btn-quiz {
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.english-practice .btn-quiz-prev {
+  background: #f0f0f0;
+  border: none;
+  color: #666;
+}
+
+.english-practice .btn-quiz-prev:hover {
+  background: #e0e0e0;
+}
+
+.english-practice .btn-quiz-prev:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.english-practice .btn-quiz-next {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+}
+
+.english-practice .btn-quiz-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Vocabulary Section */
+.english-practice .vocabulary {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.english-practice .vocabulary .section-title,
+.english-practice .vocabulary .section-description {
+  color: white;
+}
+
+.english-practice .vocabulary .section-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.english-practice .vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.english-practice .vocab-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.english-practice .vocab-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.english-practice .vocab-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.8rem;
+}
+
+.english-practice .vocab-word {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.english-practice .vocab-phonetic {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.english-practice .vocab-meaning {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.english-practice .vocab-audio {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.english-practice .vocab-audio:hover {
+  transform: scale(1.1);
+}
+
+/* Grammar Section */
+.english-practice .grammar {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.english-practice .grammar-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.english-practice .grammar-item {
+  background: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.english-practice .grammar-header {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.english-practice .grammar-header:hover {
+  background: #f8f9fa;
+}
+
+.english-practice .grammar-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.english-practice .grammar-title i {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.english-practice .grammar-arrow {
+  font-size: 1.2rem;
+  color: #667eea;
+  transition: transform 0.3s ease;
+}
+
+.english-practice .grammar-item.active .grammar-arrow {
+  transform: rotate(180deg);
+}
+
+.english-practice .grammar-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.english-practice .grammar-item.active .grammar-content {
+  max-height: 500px;
+}
+
+.english-practice .grammar-body {
+  padding: 0 30px 30px;
+}
+
+.english-practice .grammar-body p {
+  margin-bottom: 15px;
+}
+
+.english-practice .grammar-example {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.english-practice .grammar-example-title {
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.english-practice .grammar-example-sentence {
+  color: #555;
+  line-height: 1.8;
+}
+
+.english-practice .grammar-example-sentence span {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* Leaderboard */
+.english-practice .leaderboard {
+  padding: 100px 0;
+  background: white;
+}
+
+.english-practice .leaderboard-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.english-practice .leaderboard-table {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.english-practice .leaderboard-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 25px 30px;
+  display: grid;
+  grid-template-columns: 60px 1fr 150px 100px;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.english-practice .leaderboard-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 150px 100px;
+  gap: 20px;
+  padding: 20px 30px;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.english-practice .leaderboard-row:hover {
+  background: #f8f9fa;
+}
+
+.english-practice .rank {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.english-practice .rank-1 { color: #ffd700; }
+.english-practice .rank-2 { color: #c0c0c0; }
+.english-practice .rank-3 { color: #cd7f32; }
+
+.english-practice .user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.english-practice .user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.english-practice .user-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.english-practice .user-level {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.english-practice .user-score {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.english-practice .user-streak {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.english-practice .your-rank-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+.english-practice .your-rank-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.english-practice .your-rank-number {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.english-practice .your-rank-label {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.english-practice .your-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.english-practice .your-stat-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.english-practice .your-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.english-practice .your-stat-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* CTA Section */
+.english-practice .cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+}
+
+.english-practice .cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.english-practice .cta-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.english-practice .cta-description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+}
+
+.english-practice .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.english-practice .btn-cta {
+  padding: 18px 45px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-practice .btn-cta-primary {
+  background: white;
+  color: #667eea;
+  border: none;
+}
+
+.english-practice .btn-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.english-practice .btn-cta-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.english-practice .btn-cta-secondary:hover {
+  background: white;
+  color: #667eea;
+}
+
+/* Footer */
+.english-practice .footer {
+  background: #1a1a2e;
+  color: white;
+  padding: 80px 0 30px;
+}
+
+.english-practice .footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.english-practice .footer-brand {
+  max-width: 300px;
+}
+
+.english-practice .footer-logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.english-practice .footer-description {
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.english-practice .footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.english-practice .social-btn {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.english-practice .social-btn:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: translateY(-3px);
+}
+
+.english-practice .footer-column h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.english-practice .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.english-practice .footer-links li {
+  margin-bottom: 12px;
+}
+
+.english-practice .footer-links a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.english-practice .footer-links a:hover {
+  color: #667eea;
+}
+
+.english-practice .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+  text-align: center;
+  color: #888;
+}
+
+/* Modal */
+.english-practice .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+.english-practice .modal.active {
+  display: flex;
+}
+
+.english-practice .modal-content {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.english-practice .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.english-practice .modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.english-practice .modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.english-practice .modal-close:hover {
+  color: #333;
+}
+
+.english-practice .form-group {
+  margin-bottom: 20px;
+}
+
+.english-practice .form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.english-practice .form-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.english-practice .form-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.english-practice .form-submit {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.english-practice .form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Result Modal */
+.english-practice .result-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.english-practice .result-score {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.english-practice .result-score h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.english-practice .result-score p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.english-practice .result-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.english-practice .result-detail-item {
+  text-align: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.english-practice .result-detail-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.english-practice .result-detail-label {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Toast Notification */
+.english-practice .toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #333;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 3000;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(150%); }
+  to { transform: translateX(0); }
+}
+
+.english-practice .toast.success {
+  background: #28a745;
+}
+
+.english-practice .toast.error {
+  background: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .english-practice .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .english-practice .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .english-practice .hero-buttons {
+    justify-content: center;
+  }
+
+  .english-practice .hero-stats {
+    justify-content: center;
+  }
+
+  .english-practice .hero-image {
+    display: none;
+  }
+
+  .english-practice .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .english-practice .vocab-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .english-practice .leaderboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .english-practice .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .english-practice .nav-links {
+    display: none;
+  }
+
+  .english-practice .nav-buttons {
+    display: none;
+  }
+
+  .english-practice .hero-title {
+    font-size: 2rem;
+  }
+
+  .english-practice .section-title {
+    font-size: 2rem;
+  }
+
+  .english-practice .features-grid,
+  .english-practice .practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .english-practice .vocab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .english-practice .leaderboard-header,
+  .english-practice .leaderboard-row {
+    grid-template-columns: 50px 1fr 80px;
+  }
+
+  .english-practice .user-streak {
+    display: none;
+  }
+
+  .english-practice .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .english-practice .cta-title {
+    font-size: 2rem;
+  }
+}
