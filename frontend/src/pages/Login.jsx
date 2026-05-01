@@ -10,76 +10,60 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setError('');
     setLoading(true);
 
-    try {
-      const response = await fetch(`${API_CONFIG.BASE_URL}/${API_CONFIG.ENDPOINTS.LOGIN}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password })
-      });
+    // DEMO MODE: Fake đăng nhập không cần backend
+    setTimeout(() => {
+      let demoUser = null;
 
-      const data = await response.json();
-
-      if (response.ok) {
-        // Đăng nhập thành công
-        const accessToken = data.data.accessToken;
-        const userData = data.data.user;  
-
-        localStorage.setItem('token', accessToken);
-
-        const userToStore = {
-          userId: userData.userId,
-          username: userData.username,
-          email: userData.email,
-          role: userData.role.toLowerCase()
+      if (username === 'admin' && password === 'admin123') {
+        demoUser = {
+          userId: 'admin-001',
+          username: 'admin',
+          email: 'admin@luyenthithpt.com',
+          role: 'admin'
         };
-
-        localStorage.setItem('user', JSON.stringify(userToStore));
-
-        const userRole = userToStore.role;
-
-        setTimeout(() => {
-          if (userRole === 'admin') {
-            window.location.href = '/admin';
-          } else if (userRole === 'teacher') {
-            window.location.href = '/teacher';
-          } else if (userRole === 'student') {  
-            window.location.href = '/student';
-          } else {
-            window.location.href = '/';
-          }
-        }, 100);
-
-      } else if (response.status === 401) {
-        // ✅ Hiển thị thông báo lỗi từ server
-        const errorMessage = data.message || data.data?.message || 'Đăng nhập thất bại';
-        
-        // Phân biệt các loại lỗi để hiển thị phù hợp
-        if (errorMessage.toLowerCase().includes('tên đăng nhập') || errorMessage.toLowerCase().includes('username') 
-            || errorMessage.toLowerCase().includes('mật khẩu') || errorMessage.toLowerCase().includes('password')) {
-          setError('Tài khoản hoặc mật khẩu không chính xác. Vui lòng thử lại.');
-        } else if (  errorMessage.toLowerCase().includes('khóa') || errorMessage.toLowerCase().includes('lock')) {
-          setError('Tài khoản đã bị khóa. Vui lòng liên hệ quản trị viên để được hỗ trợ.');
-          
-        } else {
-          setError(errorMessage);
-        }
+      } else if (username === 'teacher' && password === 'teacher123') {
+        demoUser = {
+          userId: 'teacher-001',
+          username: 'teacher',
+          email: 'teacher@luyenthithpt.com',
+          role: 'teacher'
+        };
+      } else if (username === 'student' && password === 'student123') {
+        demoUser = {
+          userId: 'student-001',
+          username: 'student',
+          email: 'student@luyenthithpt.com',
+          role: 'student'
+        };
       } else {
-        // Các lỗi khác (500, 400, etc.)
-        setError(data.message || 'Đăng nhập thất bại. Vui lòng thử lại.');
+        setError('Tài khoản hoặc mật khẩu không chính xác. Vui lòng thử lại.');
+        setLoading(false);
+        return;
       }
-    } catch (err) {
-      setError('Không thể kết nối đến server. Vui lòng kiểm tra backend đang chạy hay chưa.');
-      console.error('Login error:', err);
-    } finally {
-      setLoading(false);
-    }
+
+      // Lưu thông tin user vào localStorage
+      localStorage.setItem('token', 'demo-token-' + Date.now());
+      localStorage.setItem('user', JSON.stringify(demoUser));
+
+      // Chuyển hướng
+      const userRole = demoUser.role;
+      
+      setTimeout(() => {
+        if (userRole === 'admin') {
+          window.location.href = '/admin';
+        } else if (userRole === 'teacher') {
+          window.location.href = '/teacher';
+        } else if (userRole === 'student') {  
+          window.location.href = '/student';
+        }
+      }, 300);
+      
+    }, 500);
   };
 
   return (

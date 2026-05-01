@@ -156,14 +156,19 @@ function Navbar() {
                       Quản lý nội dung
                     </button>
                   )}
-                   {currentUser.role?.toLowerCase() === 'student' && (
-                    <button className="dropdown-item" onClick={() => { navigate('/student'); setShowUserDropdown(false); }}>
-                      <i className="fas fa-user-graduate"></i>
-                      Trang học sinh
-                    </button>
-                  )}
-                  
-                  <button className="dropdown-item logout" onClick={handleLogout}>
+                    {currentUser.role?.toLowerCase() === 'student' && (
+                     <button className="dropdown-item" onClick={() => { navigate('/student'); setShowUserDropdown(false); }}>
+                       <i className="fas fa-user-graduate"></i>
+                       Trang học sinh
+                     </button>
+                   )}
+                   
+                   <button className="dropdown-item" onClick={() => { navigate('/profile'); setShowUserDropdown(false); }}>
+                     <i className="fas fa-user-cog"></i>
+                     Thông tin tài khoản
+                   </button>
+                   
+                   <button className="dropdown-item logout" onClick={handleLogout}>
                     <i className="fas fa-sign-out-alt"></i>
                     Đăng xuất
                   </button>

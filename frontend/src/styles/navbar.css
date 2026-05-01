@@ -31,21 +31,15 @@
   align-items: center;
   gap: 10px;
   font-size: 1.8rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 700;
+  color: #165DFF;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .logo i {
   font-size: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #165DFF;
 }
 
 .logo:hover {
@@ -72,7 +66,7 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #667eea;
+  color: #165DFF;
 }
 
 .nav-links a::after {
@@ -81,9 +75,8 @@
   bottom: -5px;
   left: 0;
   width: 0;
-  height: 3px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 10px;
+  height: 2px;
+  background: #165DFF;
   transition: width 0.3s ease;
 }
 
@@ -112,26 +105,25 @@
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #667eea;
-  color: #667eea;
+  border: 1px solid #165DFF;
+  color: #165DFF;
+  border-radius: 6px;
 }
 
 .btn-outline:hover {
-  background: #667eea;
+  background: #165DFF;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #165DFF;
   color: white;
   border: none;
+  border-radius: 6px;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+  background: #0f4cd1;
 }
 
 /* User Menu */
@@ -144,9 +136,9 @@
   align-items: center;
   gap: 10px;
   padding: 8px 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #165DFF;
   border: none;
-  border-radius: 50px;
+  border-radius: 6px;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -205,7 +197,7 @@
   align-items: center;
   gap: 15px;
   padding: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #165DFF;
   color: white;
 }
 
@@ -259,8 +251,8 @@
 }
 
 .dropdown-item:hover {
-  background: #f8f9fa;
-  color: #667eea;
+  background: #f0f5ff;
+  color: #165DFF;
 }
 
 .dropdown-item.logout {

@@ -11,6 +11,7 @@ import Students from "./pages/Students.jsx";
 import Teachers from "./pages/Teachers.jsx";
 import Courses from "./pages/Courses.jsx";
 import EnglishPractice from "./pages/EnglishPractice.jsx";
+import Profile from "./pages/Profile.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import { AdminRoute, TeacherRoute, StudentRoute } from "./components/ProtectedRoute.jsx";
@@ -48,6 +49,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginRoute />} />
             <Route path="/register" element={<RegisterRoute />} />
+            <Route path="/profile" element={<Profile />} />
             
             {/* Protected routes - Admin only */}
             <Route path="/admin" element={
