@@ -1,6 +1,6 @@
 // src/pages/admin/components/UserModal.jsx
 import React, { useState, useEffect } from 'react';
-import API_CONFIG from '../../../config/api.config';
+import { userService } from '../../../services/userService';
 
 function UserModal({ userId, user: propUser, onSubmit, onClose, isEditMode = false }) {
   const [user, setUser] = useState(null);
@@ -17,6 +17,26 @@ function UserModal({ userId, user: propUser, onSubmit, onClose, isEditMode = fal
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
+    const fetchUserDetail = async () => {
+      setLoading(true);
+      try {
+        const userData = await userService.getUserDetail(userId);
+        setUser(userData);
+        setFormData({
+          username: userData.username || '',
+          email: userData.email || '',
+          password: '',
+          role: userData.role || 'Student',
+          school: userData.school || '',
+          grade: userData.grade || '',
+        });
+      } catch (error) {
+        console.error('Lỗi tải chi tiết user:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     if (userId) {
       fetchUserDetail();
     } else if (propUser) {
@@ -41,36 +61,6 @@ function UserModal({ userId, user: propUser, onSubmit, onClose, isEditMode = fal
       });
     }
   }, [userId, propUser]);
-
-  const fetchUserDetail = async () => {
-    setLoading(true);
-    try {
-      const token = localStorage.getItem('accessToken');
-      const response = await fetch(
-        `${API_CONFIG.BASE_URL}/${API_CONFIG.ENDPOINTS.GET_USER.replace('{id}', userId)}`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-      if (!response.ok) throw new Error('Failed to fetch user detail');
-      const userData = await response.json();
-      setUser(userData);
-      setFormData({
-        username: userData.username || '',
-        email: userData.email || '',
-        password: '',
-        role: userData.role || 'Student',
-        school: userData.school || '',
-        grade: userData.grade || '',
-      });
-    } catch (error) {
-      console.error('Lỗi tải chi tiết user:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const validate = () => {
     const newErrors = {};

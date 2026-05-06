@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { examService } from "../services/examService";
 import "../styles/exam-taking.css";
 
 function ExamTaking() {
@@ -14,76 +15,33 @@ function ExamTaking() {
   const [timeLeft, setTimeLeft] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [attemptId, setAttemptId] = useState(null);
   
-  // Mock exam data
+  // Tạo phiên làm bài thi và lấy đề thi
   useEffect(() => {
-    const mockExam = {
-      id: examId,
-      name: "Thi thử lần 1",
-      code: "001",
-      duration: 60,
-      questions: [
-        {
-          id: 1,
-          content: 'Choose the correct pronunciation of "pronunciation"',
-          skill: "Ngữ âm",
-          options: [
-            { id: "A", content: "/prəˌnʌnsiˈeɪʃən/" },
-            { id: "B", content: "/prəˌnaʊnsiˈeɪʃən/" },
-            { id: "C", content: "/prəˌnʌnsiˈeɪʃn/" },
-            { id: "D", content: "/prəˌnaʊnsiˈeɪʃn/" }
-          ]
-        },
-        {
-          id: 2,
-          content: 'Complete the sentence: She _____ to the store yesterday.',
-          skill: "Ngữ pháp",
-          options: [
-            { id: "A", content: "go" },
-            { id: "B", content: "goes" },
-            { id: "C", content: "went" },
-            { id: "D", content: "going" }
-          ]
-        },
-        {
-          id: 3,
-          content: 'What is the synonym of "happy"?',
-          skill: "Từ vựng",
-          options: [
-            { id: "A", content: "sad" },
-            { id: "B", content: "angry" },
-            { id: "C", content: "joyful" },
-            { id: "D", content: "tired" }
-          ]
-        },
-        {
-          id: 4,
-          content: 'Read the passage and answer: What is the main idea?',
-          skill: "Đọc hiểu",
-          options: [
-            { id: "A", content: "Technology is bad" },
-            { id: "B", content: "Education is important" },
-            { id: "C", content: "Students should study more" },
-            { id: "D", content: "Teachers are not needed" }
-          ]
-        },
-        {
-          id: 5,
-          content: 'Listen to the audio and choose the correct answer.',
-          skill: "Nghe",
-          options: [
-            { id: "A", content: "The man is a teacher" },
-            { id: "B", content: "The woman is a student" },
-            { id: "C", content: "They are in a library" },
-            { id: "D", content: "It is raining outside" }
-          ]
-        }
-      ]
+    const initExam = async () => {
+      try {
+         // Tạo phiên làm bài thi mới với examCodeId
+         const attemptResult = await examService.createExamAttempt(examId);
+         
+         // Lưu attemptId từ response
+         if (attemptResult.data?.id) {
+           setAttemptId(attemptResult.data.id);
+         }
+
+         // Load dữ liệu đề thi
+         const examData = await examService.getExamById(examId);
+        
+        setExam(examData.data || examData);
+        setTimeLeft((examData.data?.duration || 60) * 60);
+      } catch (error) {
+        alert(error.message);
+        navigate("/student");
+      }
     };
-    
-    setExam(mockExam);
-    setTimeLeft(mockExam.duration * 60); // Convert to seconds
-  }, [examId]);
+
+    initExam();
+  }, [examId, navigate]);
 
   // Timer countdown
   useEffect(() => {
@@ -100,7 +58,7 @@ function ExamTaking() {
       
       return () => clearInterval(timer);
     }
-  }, [timeLeft, isSubmitting]);
+  }, [timeLeft, isSubmitting, handleSubmit]);
 
   // Check if user is student
   useEffect(() => {
@@ -110,10 +68,24 @@ function ExamTaking() {
   }, [currentUser, navigate]);
 
   const handleAnswer = (questionId, optionId) => {
-    setAnswers(prev => ({
-      ...prev,
+    const newAnswers = {
+      ...answers,
       [questionId]: optionId
-    }));
+    };
+    
+    setAnswers(newAnswers);
+
+    // Auto save answers to server khi có attemptId
+    if (attemptId) {
+      const answersArray = Object.entries(newAnswers).map(([id, selected]) => ({
+        examQuestionId: id,
+        selectedOption: selected
+      }));
+      
+      // Auto save không cần đợi response
+      examService.updateExamAttemptAnswers(attemptId, answersArray)
+        .catch(err => console.warn('Auto save answers failed:', err));
+    }
   };
 
   const handleNext = () => {
@@ -128,42 +100,30 @@ function ExamTaking() {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = useCallback(async () => {
     setIsSubmitting(true);
     
-    // Calculate score
-    let correct = 0;
-    exam.questions.forEach(question => {
-      if (answers[question.id] === "B") { // Mock correct answer
-        correct++;
+    try {
+      // Lưu toàn bộ câu trả lời lần cuối lên server
+      if (attemptId) {
+        const answersArray = Object.entries(answers).map(([id, selected]) => ({
+          examQuestionId: id,
+          selectedOption: selected
+        }));
+        
+        await examService.updateExamAttemptAnswers(attemptId, answersArray);
+        
+        // Gọi endpoint nộp bài thi chính thức
+        await examService.submitExamAttempt(attemptId);
       }
-    });
-    
-    const score = (correct / exam.questions.length) * 10;
-    
-    // Save result
-    const result = {
-      examId: exam.id,
-      examName: exam.name,
-      code: exam.code,
-      score: score,
-      correct: correct,
-      total: exam.questions.length,
-      answers: answers,
-      date: new Date().toISOString().split('T')[0],
-      time: formatTime(exam.duration * 60 - timeLeft)
-    };
-    
-    // Save to localStorage
-    const existingResults = JSON.parse(localStorage.getItem("examResults") || "[]");
-    existingResults.push(result);
-    localStorage.setItem("examResults", JSON.stringify(existingResults));
-    
-    // Navigate to results
-    setTimeout(() => {
-      navigate("/student", { state: { result } });
-    }, 1000);
-  };
+
+      // Chuyển về dashboard sau khi nộp bài thành công
+      navigate("/student");
+    } catch (error) {
+      alert('Nộp bài thất bại: ' + error.message);
+      setIsSubmitting(false);
+    }
+  }, [attemptId, answers, navigate]);
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);

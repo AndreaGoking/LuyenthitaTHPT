@@ -16,7 +16,6 @@ const AdminOverview = ({ statistics, onNavigate }) => {
     <div className="tab-content">
       <div className="content-header">
         <h2 className="content-title">Tổng quan hệ thống</h2>
-        <p className="content-description">Xem các chỉ số quan trọng của hệ thống</p>
       </div>
 
       <div className="stats-grid">
@@ -73,36 +72,6 @@ const AdminOverview = ({ statistics, onNavigate }) => {
             <div className="stat-value">{statsData.passRate}%</div>
             <div className="stat-label">Tỷ lệ đậu</div>
           </div>
-        </div>
-      </div>
-
-      <div className="quick-actions-section">
-        <h3 className="section-title">Thao tác nhanh</h3>
-        <div className="quick-actions-grid">
-          <button className="quick-action-card" onClick={() => onNavigate('users')}>
-            <div className="quick-action-icon">
-              <i className="fas fa-user-plus"></i>
-            </div>
-            <span className="quick-action-text">Quản lý tài khoản</span>
-          </button>
-          <button className="quick-action-card" onClick={() => onNavigate('matrix')}>
-            <div className="quick-action-icon">
-              <i className="fas fa-th"></i>
-            </div>
-            <span className="quick-action-text">Cấu hình ma trận</span>
-          </button>
-          <button className="quick-action-card" onClick={() => onNavigate('exams')}>
-            <div className="quick-action-icon">
-              <i className="fas fa-clipboard-list"></i>
-            </div>
-            <span className="quick-action-text">Quản lý kỳ thi</span>
-          </button>
-          <button className="quick-action-card" onClick={() => onNavigate('questions')}>
-            <div className="quick-action-icon">
-              <i className="fas fa-question-circle"></i>
-            </div>
-            <span className="quick-action-text">Ngân hàng câu hỏi</span>
-          </button>
         </div>
       </div>
     </div>

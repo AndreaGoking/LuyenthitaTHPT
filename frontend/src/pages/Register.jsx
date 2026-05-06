@@ -16,6 +16,7 @@ function Register() {
     role: 'student'
   });
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -113,6 +114,9 @@ function Register() {
       console.log('Register response:', data);
 
       if (response.ok && data.success) {
+        setSuccess('✅ Đăng ký tài khoản thành công! Đang chuyển hướng...');
+        setError('');
+        
         // ✅ Lưu token và user từ response (cấu trúc khác với login)
         if (data.accessToken) {
           setToken(data.accessToken);  // ← Dùng accessToken, không phải token
@@ -127,15 +131,10 @@ function Register() {
           setUser(userToStore);
         }
         
-        // Chuyển hướng dựa vào role
-        const userRole = data.user?.role?.toLowerCase();
-        if (userRole === 'teacher') {
-          window.location.href = '/teacher';
-        } else if (userRole === 'student') {
+        // Chuyển hướng sau 1.5 giây để người dùng thấy thông báo
+        setTimeout(() => {
           window.location.href = '/student';
-        } else {
-          window.location.href = '/';
-        }
+        }, 1500);
       } else {
         // Hiển thị message lỗi từ backend
         setError(data.message || 'Đăng ký thất bại. Vui lòng thử lại.');
@@ -171,26 +170,22 @@ function Register() {
               </div>
             )}
             
-            {/* ✅ Lựa chọn vai trò đăng ký */}
+            {success && (
+              <div className="success-message">
+                <i className="fas fa-check-circle"></i>
+                {success}
+              </div>
+            )}
+            
+            {/* ✅ Chỉ đăng ký cho học sinh */}
             <div className="role-selection">
               <button 
                 type="button" 
-                className={`role-btn ${formData.role === 'student' ? 'active' : ''}`}
-                onClick={() => handleRoleChange('student')}
-                disabled={loading}
+                className="role-btn active"
+                disabled={true}
               >
                 <i className="fas fa-user-graduate"></i>
                 <span>Đăng ký với tư cách Học sinh</span>
-              </button>
-              
-              <button 
-                type="button" 
-                className={`role-btn ${formData.role === 'teacher' ? 'active' : ''}`}
-                onClick={() => handleRoleChange('teacher')}
-                disabled={loading}
-              >
-                <i className="fas fa-chalkboard-teacher"></i>
-                <span>Đăng ký với tư cách Giáo viên</span>
               </button>
             </div>
 

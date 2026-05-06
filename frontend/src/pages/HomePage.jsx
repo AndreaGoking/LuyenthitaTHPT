@@ -3,16 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/home.css";
 import bannerImg from "../assets/images/banner.png";
 import banner3Img from "../assets/images/banner3.jpg";
-import bg1Img from "../assets/images/bg1.jpg";
-import classromImg from "../assets/images/classrom.jpg";
-import blog1Img from "../assets/images/blog1.jpg";
-import blog2Img from "../assets/images/blog2.jpg";
-import blog3Img from "../assets/images/blog3.jpg";
-import testi1Img from "../assets/images/testi1.jpg";
-import testi2Img from "../assets/images/testi2.jpg";
-import testi3Img from "../assets/images/testi3.jpg";
 import icon1Img from "../assets/images/icon-1.png";
-import icon2Img from "../assets/images/icon-2.png";
 import icon3Img from "../assets/images/icon-3.png";
 import icon4Img from "../assets/images/icon-4.png";
 
@@ -47,38 +38,6 @@ function HomePage() {
     showToast('Đăng xuất thành công!');
   };
 
-  const features = [
-    {
-      icon: 'fas fa-book-open',
-      title: 'Bài tập đa dạng',
-      description: 'Hàng nghìn bài tập từ cơ bản đến nâng cao, bao gồm tất cả ngữ pháp và từ vựng'
-    },
-    {
-      icon: 'fas fa-robot',
-      title: 'AI cá nhân hóa',
-      description: 'Hệ thống AI phân tích điểm mạnh, yếu và tạo lộ trình học phù hợp'
-    },
-    {
-      icon: 'fas fa-clipboard-check',
-      title: 'Thi thử như thật',
-      description: 'Đề thi mô phỏng chính xác format THPT Quốc gia, IELTS, TOEIC'
-    },
-    {
-      icon: 'fas fa-video',
-      title: 'Video bài giảng',
-      description: 'Video chất lượng cao từ giáo viên giàu kinh nghiệm'
-    },
-    {
-      icon: 'fas fa-brain',
-      title: 'Từ vựng thông minh',
-      description: 'Học từ vựng với flashcard, spaced repetition và luyện phát âm'
-    },
-    {
-      icon: 'fas fa-users',
-      title: 'Cộng đồng năng động',
-      description: 'Kết nối với hàng nghìn học viên, chia sẻ kinh nghiệm và động viên lẫn nhau'
-    }
-  ];
 
   const practiceTopics = {
     grammar: [
@@ -321,9 +280,9 @@ function HomePage() {
               </div>
               <h3 className="feature-title">Bài tập đa dạng</h3>
               <p className="feature-description">Hàng nghìn bài tập từ cơ bản đến nâng cao, bao gồm tất cả ngữ pháp và từ vựng</p>
-              <a href="#" className="feature-link" onClick={(e) => e.preventDefault()}>
+              <button className="feature-link" onClick={(e) => e.preventDefault()}>
                 Khám phá <i className="fas fa-arrow-right"></i>
-              </a>
+              </button>
             </div>
             <div className="feature-card" onClick={() => showToast('Tính năng đang được phát triển!')}>
               <div className="feature-icon">
@@ -331,9 +290,9 @@ function HomePage() {
               </div>
               <h3 className="feature-title">Tiến độ học tập</h3>
               <p className="feature-description">Theo dõi quá trình học tập và đánh giá kết quả</p>
-              <a href="#" className="feature-link" onClick={(e) => e.preventDefault()}>
+              <button className="feature-link" onClick={(e) => e.preventDefault()}>
                 Khám phá <i className="fas fa-arrow-right"></i>
-              </a>
+              </button>
             </div>
             <div className="feature-card" onClick={() => showToast('Tính năng thi thử đang được mở!')}>
               <div className="feature-icon">

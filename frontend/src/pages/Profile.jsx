@@ -1,13 +1,15 @@
- import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getUser, isAuthenticated } from '../utils/auth';
 import Navbar from '../components/Navbar';
+import ChangePasswordForm from '../components/ChangePasswordForm';
 import '../styles/profile.css';
 
 function Profile() {
   const navigate = useNavigate();
   const [currentUser, setCurrentUser] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [showChangePassword, setShowChangePassword] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -200,62 +202,162 @@ function Profile() {
             </div>
           </div>
 
-          <div className="profile-stats">
-            <div className="stat-card">
-              <div className="stat-icon blue">
-                <i className="fas fa-book"></i>
-              </div>
-              <div className="stat-info">
-                <h3>12</h3>
-                <p>Bài đã làm</p>
-              </div>
-            </div>
-            
-            <div className="stat-card">
-              <div className="stat-icon green">
-                <i className="fas fa-check-circle"></i>
-              </div>
-              <div className="stat-info">
-                <h3>87%</h3>
-                <p>Tỷ lệ đúng</p>
-              </div>
-            </div>
-            
-            <div className="stat-card">
-              <div className="stat-icon purple">
-                <i className="fas fa-trophy"></i>
-              </div>
-              <div className="stat-info">
-                <h3>#45</h3>
-                <p>Hạng hiện tại</p>
-              </div>
-            </div>
-            
-            <div className="stat-card">
-              <div className="stat-icon orange">
-                <i className="fas fa-fire"></i>
-              </div>
-              <div className="stat-info">
-                <h3>7</h3>
-                <p>Ngày liên tiếp</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="profile-card">
-            <div className="card-header">
-              <h2><i className="fas fa-key"></i> Bảo mật tài khoản</h2>
-            </div>
-            <div className="card-body">
-              <div className="security-item">
-                <div className="security-info">
-                  <div className="security-title">Đổi mật khẩu</div>
-                  <div className="security-desc">Cập nhật mật khẩu mới cho tài khoản của bạn</div>
+          {currentUser.role?.toLowerCase() === 'student' && (
+            <div className="profile-stats">
+              <div className="stat-card">
+                <div className="stat-icon blue">
+                  <i className="fas fa-book"></i>
                 </div>
-                <button className="btn btn-outline btn-sm">
-                  <i className="fas fa-lock"></i> Đổi mật khẩu
-                </button>
+                <div className="stat-info">
+                  <h3>12</h3>
+                  <p>Bài đã làm</p>
+                </div>
               </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon green">
+                  <i className="fas fa-check-circle"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>87%</h3>
+                  <p>Tỷ lệ đúng</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon purple">
+                  <i className="fas fa-trophy"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>#45</h3>
+                  <p>Hạng hiện tại</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon orange">
+                  <i className="fas fa-fire"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>7</h3>
+                  <p>Ngày liên tiếp</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentUser.role?.toLowerCase() === 'teacher' && (
+            <div className="profile-stats">
+              <div className="stat-card">
+                <div className="stat-icon blue">
+                  <i className="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>24</h3>
+                  <p>Khóa học đã tạo</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon green">
+                  <i className="fas fa-users"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>356</h3>
+                  <p>Học sinh đang theo học</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon purple">
+                  <i className="fas fa-file-alt"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>128</h3>
+                  <p>Bài kiểm tra đã tạo</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon orange">
+                  <i className="fas fa-star"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>4.8</h3>
+                  <p>Đánh giá trung bình</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentUser.role?.toLowerCase() === 'admin' && (
+            <div className="profile-stats">
+              <div className="stat-card">
+                <div className="stat-icon blue">
+                  <i className="fas fa-user-graduate"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>2.456</h3>
+                  <p>Tổng số học sinh</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon green">
+                  <i className="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>48</h3>
+                  <p>Giáo viên hoạt động</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon purple">
+                  <i className="fas fa-book-open"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>156</h3>
+                  <p>Tổng khóa học</p>
+                </div>
+              </div>
+              
+              <div className="stat-card">
+                <div className="stat-icon orange">
+                  <i className="fas fa-server"></i>
+                </div>
+                <div className="stat-info">
+                  <h3>99.9%</h3>
+                  <p>Thời gian hoạt động</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+           <div className="profile-card">
+             <div className="card-header">
+               <h2><i className="fas fa-key"></i> Bảo mật tài khoản</h2>
+             </div>
+             <div className="card-body">
+               <div className="security-item">
+                 <div className="security-info">
+                   <div className="security-title">Đổi mật khẩu</div>
+                   <div className="security-desc">Cập nhật mật khẩu mới cho tài khoản của bạn</div>
+                 </div>
+                 <button 
+                   className="btn btn-outline btn-sm"
+                   onClick={() => setShowChangePassword(!showChangePassword)}
+                 >
+                   <i className="fas fa-lock"></i> 
+                   {showChangePassword ? 'Đóng' : 'Đổi mật khẩu'}
+                 </button>
+               </div>
+
+               {showChangePassword && (
+                 <div style={{ marginTop: '24px', paddingTop: '24px', borderTop: '1px solid #e5e7eb' }}>
+                   <ChangePasswordForm />
+                 </div>
+               )}
               
               <div className="security-item">
                 <div className="security-info">

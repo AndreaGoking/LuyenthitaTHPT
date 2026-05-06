@@ -1,69 +1,91 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import API_CONFIG from '../config/api.config';
+import { userService } from '../services/userService';
 import '../styles/login.css';
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
+  const [forgotEmail, setForgotEmail] = useState('');
+  const [forgotSuccess, setForgotSuccess] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     setLoading(true);
 
-    // DEMO MODE: Fake đăng nhập không cần backend
-    setTimeout(() => {
-      let demoUser = null;
+    try {
+      const response = await fetch(`${API_CONFIG.BASE_URL}/${API_CONFIG.ENDPOINTS.LOGIN}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
 
-      if (username === 'admin' && password === 'admin123') {
-        demoUser = {
-          userId: 'admin-001',
-          username: 'admin',
-          email: 'admin@luyenthithpt.com',
-          role: 'admin'
-        };
-      } else if (username === 'teacher' && password === 'teacher123') {
-        demoUser = {
-          userId: 'teacher-001',
-          username: 'teacher',
-          email: 'teacher@luyenthithpt.com',
-          role: 'teacher'
-        };
-      } else if (username === 'student' && password === 'student123') {
-        demoUser = {
-          userId: 'student-001',
-          username: 'student',
-          email: 'student@luyenthithpt.com',
-          role: 'student'
-        };
-      } else {
-        setError('Tài khoản hoặc mật khẩu không chính xác. Vui lòng thử lại.');
-        setLoading(false);
-        return;
-      }
+      const result = await response.json();
 
-      // Lưu thông tin user vào localStorage
-      localStorage.setItem('token', 'demo-token-' + Date.now());
-      localStorage.setItem('user', JSON.stringify(demoUser));
+      if (response.ok) {
+        setSuccess('✅ Đăng nhập thành công! Đang chuyển hướng...');
+        setError('');
+        
+        // Đăng nhập thành công
+        const accessToken = result.data.accessToken;
+        const userData = result.data.user;  
 
-      // Chuyển hướng
-      const userRole = demoUser.role;
-      
-      setTimeout(() => {
-        if (userRole === 'admin') {
-          window.location.href = '/admin';
-        } else if (userRole === 'teacher') {
-          window.location.href = '/teacher';
-        } else if (userRole === 'student') {  
-          window.location.href = '/student';
+        localStorage.setItem('token', accessToken);
+
+        const userToStore = {
+          userId: userData.userId,
+          username: userData.username,
+          email: userData.email,
+          role: userData.role.toLowerCase()
+        };
+
+        localStorage.setItem('user', JSON.stringify(userToStore));
+
+        const userRole = userToStore.role;
+
+        // Chuyển hướng sau 1.2 giây để người dùng thấy thông báo
+        setTimeout(() => {
+          if (userRole === 'admin') {
+            window.location.href = '/admin';
+          } else if (userRole === 'teacher') {
+            window.location.href = '/teacher';
+          } else if (userRole === 'student') {  
+            window.location.href = '/student';
+          } else {
+            window.location.href = '/';
+          }
+        }, 1200);
+      } else if (response.status === 401) {
+        // ✅ Hiển thị thông báo lỗi từ server
+        const errorMessage = result.message || result.data?.message || 'Đăng nhập thất bại';
+        
+        // Phân biệt các loại lỗi để hiển thị phù hợp
+        if (errorMessage.toLowerCase().includes('tên đăng nhập') || errorMessage.toLowerCase().includes('username') 
+            || errorMessage.toLowerCase().includes('mật khẩu') || errorMessage.toLowerCase().includes('password')) {
+          setError('Tài khoản hoặc mật khẩu không chính xác. Vui lòng thử lại.');
+        } else if (  errorMessage.toLowerCase().includes('khóa') || errorMessage.toLowerCase().includes('lock')) {
+          setError('Tài khoản đã bị khóa. Vui lòng liên hệ quản trị viên để được hỗ trợ.');
+          
+        } else {
+          setError(errorMessage);
         }
-      }, 300);
-      
-    }, 500);
+      } else {
+        // Các lỗi khác (500, 400, etc.)
+        setError(result.message || 'Đăng nhập thất bại. Vui lòng thử lại.');
+      }
+    } catch (err) {
+      setError('Không thể kết nối đến server. Vui lòng kiểm tra backend đang chạy hay chưa.');
+      console.error('Login error:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -85,6 +107,13 @@ function Login() {
               <div className="error-message">
                 <i className="fas fa-exclamation-circle"></i>
                 {error}
+              </div>
+            )}
+            
+            {success && (
+              <div className="success-message">
+                <i className="fas fa-check-circle"></i>
+                {success}
               </div>
             )}
             
@@ -120,20 +149,80 @@ function Login() {
               />
             </div>
             
-            <button type="submit" className="login-button" disabled={loading}>
-              {loading ? (
-                <>
-                  <span className="loading-spinner"></span>
-                  Đang đăng nhập...
-                </>
-              ) : (
-                <>
-                  <i className="fas fa-sign-in-alt"></i>
-                  Đăng nhập
-                </>
-              )}
-            </button>
-          </form>
+           <button type="submit" className="login-button" disabled={loading}>
+               {loading ? (
+                 <>
+                   <span className="loading-spinner"></span>
+                   Đang đăng nhập...
+                 </>
+               ) : (
+                 <>
+                   <i className="fas fa-sign-in-alt"></i>
+                   Đăng nhập
+                 </>
+               )}
+             </button>
+             
+             <div className="forgot-password-link">
+               <button 
+                 className="link-btn" 
+                 onClick={() => {
+                   setShowForgotPassword(!showForgotPassword);
+                   setError('');
+                   setForgotSuccess('');
+                 }}
+               >
+                 Quên mật khẩu?
+               </button>
+             </div>
+
+             {showForgotPassword && (
+               <div className="forgot-password-form">
+                 <div style={{ marginBottom: '12px', fontSize: '14px', color: '#4b5563' }}>
+                   Nhập email của bạn, hệ thống sẽ gửi link đặt lại mật khẩu
+                 </div>
+                 
+                 {forgotSuccess && (
+                   <div className="success-message" style={{ marginBottom: '12px' }}>
+                     <i className="fas fa-check-circle"></i>
+                     {forgotSuccess}
+                   </div>
+                 )}
+
+                 <div className="form-group">
+                   <input
+                     type="email"
+                     value={forgotEmail}
+                     onChange={(e) => setForgotEmail(e.target.value)}
+                     placeholder="Nhập địa chỉ email"
+                     className="form-input"
+                     disabled={loading}
+                   />
+                 </div>
+
+                 <button 
+                   className="login-button"
+                   disabled={loading || !forgotEmail}
+                   onClick={async () => {
+                     setError('');
+                     setForgotSuccess('');
+                     setLoading(true);
+                     try {
+                       await userService.forgotPassword(forgotEmail);
+                       setForgotSuccess('Đã gửi yêu cầu thành công! Vui lòng kiểm tra email của bạn');
+                       setForgotEmail('');
+                     } catch (err) {
+                       setError(err.message || 'Gửi yêu cầu thất bại, vui lòng thử lại');
+                     } finally {
+                       setLoading(false);
+                     }
+                   }}
+                 >
+                   {loading ? 'Đang xử lý...' : 'Gửi yêu cầu'}
+                 </button>
+               </div>
+             )}
+           </form>
 
           <div className="login-footer">
             <p>

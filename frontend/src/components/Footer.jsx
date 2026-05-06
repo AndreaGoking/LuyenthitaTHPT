@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/footer.css";
 
 function Footer() {
   const navigate = useNavigate();
-  const location = useLocation();
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
 
@@ -14,16 +13,6 @@ function Footer() {
     setTimeout(() => setShowToast(false), 3000);
   };
 
-  const scrollToSection = (sectionId) => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <footer className="footer">
@@ -38,48 +27,48 @@ function Footer() {
               Nền tảng học tiếng Anh hàng đầu Việt Nam, giúp hàng nghìn học viên chinh phục mục tiêu tiếng Anh.
             </p>
             <div className="footer-social">
-              <a href="#" className="social-btn" onClick={(e) => { e.preventDefault(); showToastMessage('Facebook'); }}>
+              <button className="social-btn" onClick={() => showToastMessage('Facebook')}>
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="social-btn" onClick={(e) => { e.preventDefault(); showToastMessage('YouTube'); }}>
+              </button>
+              <button className="social-btn" onClick={() => showToastMessage('YouTube')}>
                 <i className="fab fa-youtube"></i>
-              </a>
-              <a href="#" className="social-btn" onClick={(e) => { e.preventDefault(); showToastMessage('Instagram'); }}>
+              </button>
+              <button className="social-btn" onClick={() => showToastMessage('Instagram')}>
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" className="social-btn" onClick={(e) => { e.preventDefault(); showToastMessage('TikTok'); }}>
+              </button>
+              <button className="social-btn" onClick={() => showToastMessage('TikTok')}>
                 <i className="fab fa-tiktok"></i>
-              </a>
+              </button>
             </div>
           </div>
           
           <div className="footer-column">
             <h4>Sản phẩm</h4>
             <ul className="footer-links">
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Luyện thi THPT'); }}>Luyện thi THPT</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('IELTS Preparation'); }}>IELTS Preparation</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('TOEIC Practice'); }}>TOEIC Practice</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Tiếng Anh giao tiếp'); }}>Tiếng Anh giao tiếp</a></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Luyện thi THPT')}>Luyện thi THPT</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('IELTS Preparation')}>IELTS Preparation</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('TOEIC Practice')}>TOEIC Practice</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Tiếng Anh giao tiếp')}>Tiếng Anh giao tiếp</button></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4>Hỗ trợ</h4>
             <ul className="footer-links">
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Trung tâm trợ giúp'); }}>Trung tâm trợ giúp</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Liên hệ'); }}>Liên hệ</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('FAQ'); }}>FAQ</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Góp ý'); }}>Góp ý</a></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Trung tâm trợ giúp')}>Trung tâm trợ giúp</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Liên hệ')}>Liên hệ</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('FAQ')}>FAQ</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Góp ý')}>Góp ý</button></li>
             </ul>
           </div>
           
           <div className="footer-column">
             <h4>Công ty</h4>
             <ul className="footer-links">
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Về chúng tôi'); }}>Về chúng tôi</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Tuyển dụng'); }}>Tuyển dụng</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Điều khoản'); }}>Điều khoản</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); showToastMessage('Bảo mật'); }}>Bảo mật</a></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Về chúng tôi')}>Về chúng tôi</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Tuyển dụng')}>Tuyển dụng</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Điều khoản')}>Điều khoản</button></li>
+              <li><button className="link-btn" onClick={() => showToastMessage('Bảo mật')}>Bảo mật</button></li>
             </ul>
           </div>
         </div>

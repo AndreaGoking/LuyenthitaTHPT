@@ -1,0 +1,375 @@
+/* ================================================
+   ✨ THIẾT KẾ GIAO DIỆN ĐẸP CHO WEBSITE LUYỆN THI
+   Sử dụng assets images có sẵn
+   Design by Cline | Modern UI/UX
+================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette - Theme Học Tập */
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #10b981;
+  --accent: #f59e0b;
+  --danger: #ef4444;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --gray: #64748b;
+  --white: #ffffff;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-success: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --gradient-warning: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-dark: linear-gradient(135deg, #434343 0%, #000000 100%);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Fonts */
+  --font-heading: 'Quicksand', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #f1f5f9;
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ================================================
+   🌅 HERO SECTION BANNER
+   Sử dụng ảnh banner.jpg / banner.png
+================================================ */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(99, 102, 241, 0.85), rgba(79, 70, 229, 0.8)), 
+              url('../assets/images/banner.jpg') center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/images/bg1.jpg') center/cover;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  padding: 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  opacity: 0.95;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+/* ================================================
+   🎴 CARDS DESIGN
+================================================ */
+.card {
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.card:hover .card-image::after {
+  opacity: 1;
+}
+
+/* ================================================
+   🎯 BUTTONS MODERN
+================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--primary);
+}
+
+/* ================================================
+   🧭 NAVIGATION BAR
+================================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  background: white;
+  box-shadow: var(--shadow-md);
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* ================================================
+   📚 FEATURES SECTION
+   Sử dụng icon-1.png, icon-2.png...
+================================================ */
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  background: white;
+  transition: var(--transition);
+}
+
+.feature-item:hover {
+  background: var(--gradient-primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: var(--transition);
+}
+
+.feature-icon-1 { background-image: url('../assets/images/icon-1.png'); }
+.feature-icon-2 { background-image: url('../assets/images/icon-2.png'); }
+.feature-icon-3 { background-image: url('../assets/images/icon-3.png'); }
+.feature-icon-4 { background-image: url('../assets/images/icon-4.png'); }
+
+.feature-item:hover .feature-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ================================================
+   🔐 LOGIN / REGISTER FORM
+   Sử dụng backgroundform.jpg
+================================================ */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('../assets/images/backgroundform.jpg') center/cover fixed;
+}
+
+.auth-card {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: var(--shadow-xl);
+  animation: slideIn 0.6s ease-out;
+}
+
+/* ================================================
+   ✨ ANIMATIONS
+================================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ================================================
+   📱 RESPONSIVE DESIGN
+================================================ */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+    background-attachment: scroll;
+  }
+  
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ================================================
+   🎨 SCROLLBAR CUSTOM
+================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* ================================================
+   👤 PROFILE PAGE
+================================================ */
+.profile-header {
+  background: linear-gradient(rgba(99, 102, 241, 0.9), rgba(79, 70, 229, 0.9)),
+              url('../assets/images/bg3.jpg') center/cover;
+  min-height: 250px;
+  position: relative;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--shadow-lg);
+  object-fit: cover;
+}

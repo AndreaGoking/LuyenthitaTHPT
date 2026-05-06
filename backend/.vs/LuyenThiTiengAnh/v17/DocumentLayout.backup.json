@@ -1,0 +1,717 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\examresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\examresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\dtos\\examresultdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\dtos\\examresultdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\examattemptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\examattemptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\examcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\examcodeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\helpers\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\helpers\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\repositories\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\repositories\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\studymaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\studymaterialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\questionstatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\questionstatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\services\\progressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\services\\progressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\dtos\\questiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\dtos\\questiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\dtos\\examattemptdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\dtos\\examattemptdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\studentanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\studentanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\examattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\examattempt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\models\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|f:\\dotnet_ck\\hehe\\luyenthitienganh\\luyenthitienganh\\luyenthitienganh.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F484E203-7F94-45FF-81B6-D2196E8B22D9}|LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj|solutionrelative:luyenthitienganh\\luyenthitienganh.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Repositories\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:20:02.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExamAttemptService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamAttemptService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\ExamAttemptService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamAttemptService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\ExamAttemptService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:47:31.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExamCodeService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamCodeService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\ExamCodeService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamCodeService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\ExamCodeService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAgwJIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:54:32.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:17:26.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA4wDQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:20:37.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExamResultService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamResultService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\ExamResultService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamResultService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\ExamResultService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAtwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:46:46.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExamController.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\ExamController.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Controllers\\ExamController.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\ExamController.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Controllers\\ExamController.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAkwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T06:06:41.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExamResultDtos.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\ExamResultDtos.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\DTOs\\ExamResultDtos.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\ExamResultDtos.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\DTOs\\ExamResultDtos.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:42:34.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\appsettings.json",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\appsettings.json",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\appsettings.json",
+              "RelativeToolTip": "LuyenThiTiengAnh\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-03T14:42:46.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Program.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Program.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Program.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T05:30:48.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Dockerfile",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Dockerfile",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Dockerfile",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Dockerfile",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwCUAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-04T06:31:50.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ExamService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\ExamService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ExamService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\ExamService.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAuwCMBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:51:17.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Mapping\\MappingProfile.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAYwHUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T06:33:18.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\DTOs\\AuthDtos.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T11:48:41.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\AuthService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\AuthService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\AuthService.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAwwJsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:25:30.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T11:59:15.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Data\\AppDbContext.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAYwIwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T04:01:10.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Helpers\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Helpers\\ApiResponse.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Helpers\\ApiResponse.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Helpers\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:41:38.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "JwtHelper.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Helpers\\JwtHelper.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Helpers\\JwtHelper.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Helpers\\JwtHelper.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Helpers\\JwtHelper.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T09:06:50.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Properties\\launchSettings.json",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T13:31:31.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Repositories\\GenericRepository.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA1wDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:17:01.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:49:28.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\UserService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\UserService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\UserService.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAwO8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T13:25:44.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StudyMaterialService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\StudyMaterialService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\StudyMaterialService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\StudyMaterialService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\StudyMaterialService.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:46:59.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StatisticsService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\StatisticsService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\StatisticsService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\StatisticsService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\StatisticsService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:47:02.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QuestionStatisticsService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\QuestionStatisticsService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\QuestionStatisticsService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\QuestionStatisticsService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\QuestionStatisticsService.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:47:16.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\QuestionService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\QuestionService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\QuestionService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\QuestionService.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAuwBkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:47:46.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProgressService.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ProgressService.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Services\\ProgressService.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Services\\ProgressService.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Services\\ProgressService.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:49:17.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Controllers\\UserController.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\UserController.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAA0wF4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T12:00:14.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Controllers\\StatisticsController.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAcwMQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:56:37.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Controllers\\QuestionController.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Controllers\\QuestionController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAcwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T06:57:24.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Controllers\\BaseController.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T11:58:39.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\UserDtos.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\DTOs\\UserDtos.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\UserDtos.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\DTOs\\UserDtos.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv0kAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T11:49:16.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "QuestionDtos.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\QuestionDtos.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\DTOs\\QuestionDtos.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\QuestionDtos.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\DTOs\\QuestionDtos.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAA7wFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:41:53.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ExamAttemptDtos.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\ExamAttemptDtos.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\DTOs\\ExamAttemptDtos.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\DTOs\\ExamAttemptDtos.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\DTOs\\ExamAttemptDtos.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA6wD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:42:09.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Users.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\Users.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Users.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:52:08.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Exam.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\Exam.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Exam.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\Exam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T16:04:51.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ExamAttempt.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\ExamAttempt.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\ExamAttempt.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\ExamAttempt.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\ExamAttempt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:02:44.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Question.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\Question.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Question.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\Question.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA0wCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T05:22:43.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Student.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\Student.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Student.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T17:05:12.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "StudentAnswer.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\StudentAnswer.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\StudentAnswer.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\StudentAnswer.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\StudentAnswer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:40:09.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\Models\\Teacher.cs",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\Models\\Teacher.cs",
+              "RelativeToolTip": "LuyenThiTiengAnh\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:54:10.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LuyenThiTiengAnh.csproj",
+              "DocumentMoniker": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj",
+              "RelativeDocumentMoniker": "LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj",
+              "ToolTip": "F:\\DOTNET_CK\\hehe\\LuyenThiTiengAnh\\LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj",
+              "RelativeToolTip": "LuyenThiTiengAnh\\LuyenThiTiengAnh.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-03T14:38:52.433Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

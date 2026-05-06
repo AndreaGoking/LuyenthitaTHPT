@@ -24,16 +24,29 @@ function AdminDashboard() {
     userFilters,
     setUserFilters,
     examTemplates,
-    matrixRules,
     scheduledExams,
     questions,
     statistics,
-    fetchMatrixRules,
-    fetchQuestions,
     createUser,
     updateUser,
     deleteUser,
     toggleUserStatus,
+    totalQuestions,
+    questionFilters,
+    setQuestionFilters,
+    createQuestion,
+    updateQuestion,
+    deleteQuestion,
+    examMatrices,
+    totalMatrices,
+    matrixFilters,
+    setMatrixFilters,
+    createExamMatrix,
+    updateExamMatrix,
+    deleteExamMatrix,
+    fetchSkillDistributions,
+    updateSkillDistributions,
+    validateExamMatrix,
   } = useAdminData();
 
   useEffect(() => {
@@ -78,9 +91,17 @@ function AdminDashboard() {
       case 'matrix':
         return (
           <ExamMatrix
-            examTemplates={examTemplates}
-            matrixRules={matrixRules}
-            onFetchMatrixRules={fetchMatrixRules}
+            examMatrices={examMatrices}
+            totalMatrices={totalMatrices}
+            filters={matrixFilters}
+            onFilterChange={setMatrixFilters}
+            loading={loading}
+            onCreateMatrix={createExamMatrix}
+            onUpdateMatrix={updateExamMatrix}
+            onDeleteMatrix={deleteExamMatrix}
+            onFetchSkillDistributions={fetchSkillDistributions}
+            onUpdateSkillDistributions={updateSkillDistributions}
+            onValidateMatrix={validateExamMatrix}
             onShowToast={showToast}
           />
         );
@@ -89,6 +110,7 @@ function AdminDashboard() {
           <ExamManagement
             scheduledExams={scheduledExams}
             examTemplates={examTemplates}
+            examMatrices={examMatrices}
             onShowToast={showToast}
           />
         );
@@ -96,13 +118,18 @@ function AdminDashboard() {
         return (
           <QuestionBank
             questions={questions}
+            totalQuestions={totalQuestions}
+            filters={questionFilters}
+            onFilterChange={setQuestionFilters}
             loading={loading}
-            onFetchQuestions={fetchQuestions}
+            onCreateQuestion={createQuestion}
+            onUpdateQuestion={updateQuestion}
+            onDeleteQuestion={deleteQuestion}
             onShowToast={showToast}
           />
         );
       case 'statistics':
-        return <Statistics statistics={statistics} />;
+        return <Statistics statistics={statistics} onShowToast={showToast} />;
       default:
         return null;
     }
